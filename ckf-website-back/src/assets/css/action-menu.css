@@ -1,0 +1,66 @@
+.ckf-action-menu__btn {
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-ckf-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ckf-action-menu__btn i {
+  font-size: 18px;
+}
+
+.ckf-action-menu__btn:hover,
+.ckf-action-menu__btn.is-open {
+  background: var(--color-ckf-primary-light);
+}
+
+.ckf-action-menu__list {
+  position: fixed;
+  z-index: 1090;
+  min-width: 180px;
+  padding: 8px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(6, 45, 103, 0.14);
+  border: 1px solid rgba(6, 45, 103, 0.06);
+}
+
+.ckf-action-menu__item {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-ckf-primary);
+  cursor: pointer;
+  text-align: left;
+}
+
+.ckf-action-menu__item i {
+  font-size: 15px;
+  width: 16px;
+}
+
+.ckf-action-menu__item:hover {
+  background: var(--color-ckf-primary-light);
+}
+
+.ckf-action-menu__item--danger {
+  color: var(--color-ckf-error);
+}
+
+.ckf-action-menu__item--danger:hover {
+  background: var(--color-ckf-error-bg);
+}

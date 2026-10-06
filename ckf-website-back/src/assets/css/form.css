@@ -1,0 +1,39 @@
+.ckf-form {
+  width: 100%;
+}
+
+.ckf-form__title {
+  font-family: var(--font-family-base);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-ckf-primary);
+  margin-bottom: 6px;
+}
+
+.ckf-form__subtitle {
+  font-size: 14px;
+  color: var(--color-ckf-text);
+  margin-bottom: 26px;
+  line-height: 1.5;
+}
+
+.ckf-form__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.ckf-form__actions .ckf-btn {
+  flex: 1;
+  margin-top: 0;
+}
+
+.ckf-form--page .ckf-form__actions {
+  justify-content: flex-end;
+}
+
+.ckf-form--page .ckf-form__actions .ckf-btn {
+  flex: 0 0 auto;
+  min-width: 140px;
+}

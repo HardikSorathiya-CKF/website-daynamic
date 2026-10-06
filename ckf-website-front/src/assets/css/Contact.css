@@ -1,0 +1,211 @@
+.contact-section {
+  position: relative;
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(2, 19, 44, 0.45) 48%,
+    rgba(248, 248, 248, 0) 100%
+  );
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-subtitle {
+  margin-bottom: 0.75rem;
+  color: var(--color-ckf-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contact-description {
+  margin-bottom: 1.75rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.contact-info-list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.contact-info-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(245, 128, 32, 0.6);
+  color: #ffffff;
+}
+
+.contact-info-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-info-item a {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contact-info-item a:hover,
+.contact-info-item a:focus-visible {
+  color: var(--color-ckf-secondary);
+}
+
+.contact-socials {
+  margin-bottom: 2rem;
+}
+
+.contact-socials-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.contact-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-social-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-social-link:hover,
+.contact-social-link:focus-visible {
+  background: var(--color-ckf-secondary);
+  border-color: var(--color-ckf-secondary);
+  color: #071127;
+  transform: translateY(-2px);
+}
+
+.contact-branches-title {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.contact-branch-card {
+  height: 100%;
+  padding: 1rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+.contact-branch-card h3 {
+  margin-bottom: 0.35rem;
+  color: var(--color-ckf-secondary);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contact-branch-card p,
+.contact-branch-card a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.contact-branch-city {
+  font-weight: 700;
+}
+
+.contact-branch-map {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--color-ckf-secondary) !important;
+  font-weight: 600;
+}
+
+.contact-form-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: var(--color-ckf-bg);
+  border: 1px solid rgba(6, 45, 103, 0.08);
+  box-shadow: 0 24px 60px rgba(6, 45, 103, 0.2);
+}
+
+.contact-form-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-ckf-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.contact-form-card .form-label {
+  color: var(--color-ckf-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-form-card .form-control {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(6, 45, 103, 0.15);
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+
+.contact-form-card .form-control:focus {
+  border-color: var(--color-ckf-secondary);
+  box-shadow: 0 0 0 0.2rem rgba(245, 128, 32, 0.15);
+}
+
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 70px 0;
+  }
+}

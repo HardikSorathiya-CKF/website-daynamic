@@ -1,0 +1,232 @@
+.about-intro-section {
+  padding: 100px 0;
+  background: var(--color-ckf-bg);
+}
+
+.about-intro-title {
+  margin: 0;
+  color: var(--color-ckf-primary);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.about-intro-lead {
+  margin-bottom: 1.25rem;
+  color: var(--color-ckf-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.about-intro-text {
+  color: var(--color-ckf-text);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 991px) {
+  .about-intro-section {
+    padding: 70px 0;
+  }
+}
+
+/* About MVO */
+.about-mvo-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.about-mvo-subtitle {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--color-ckf-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about-mvo-title {
+  margin-bottom: 1.75rem;
+  color: var(--color-ckf-primary);
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.mvo-tabs {
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.mvo-tabs .nav-link {
+  padding: 0.75rem 1.35rem;
+  border: 1.5px solid rgba(6, 45, 103, 0.12);
+  border-radius: 50px;
+  background: var(--color-ckf-bg);
+  color: var(--color-ckf-primary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mvo-tabs .nav-link:hover,
+.mvo-tabs .nav-link:focus-visible {
+  border-color: var(--color-ckf-secondary);
+  color: var(--color-ckf-secondary);
+  transform: translateY(-2px);
+}
+
+.mvo-tabs .nav-link.active {
+  background: var(--color-ckf-primary);
+  border-color: var(--color-ckf-primary);
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(6, 45, 103, 0.18);
+}
+
+.mvo-tab-content .tab-pane {
+  transition: opacity 0.35s ease;
+}
+
+.mvo-tab-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: var(--color-ckf-bg);
+  border: 1px solid rgba(6, 45, 103, 0.08);
+}
+
+.mvo-tab-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-ckf-primary) 0%,
+    #0d5f9e 55%,
+    rgba(245, 128, 32, 0.9) 100%
+  );
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.mvo-tab-text {
+  color: var(--color-ckf-text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-mvo-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(6, 45, 103, 0.12);
+}
+
+.about-mvo-image img {
+  display: block;
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .about-mvo-section {
+    padding: 70px 0;
+  }
+
+  .mvo-tabs {
+    flex-wrap: wrap;
+  }
+}
+
+/* About Stats */
+.about-stats-section {
+  padding: 90px 0;
+  background: var(--color-ckf-bg);
+}
+
+.about-stat-value {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-ckf-secondary);
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.about-stat-title {
+  margin-bottom: 0.85rem;
+  color: var(--color-ckf-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.about-stat-text {
+  max-width: 320px;
+  margin: 0 auto;
+  color: var(--color-ckf-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+  .about-stats-section {
+    padding: 70px 0;
+  }
+}
+
+/* Why Us */
+.about-why-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.about-why-title {
+  margin-bottom: 1.25rem;
+  color: var(--color-ckf-primary);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.about-why-text {
+  margin-bottom: 1.75rem;
+  color: var(--color-ckf-text);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.about-why-image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(6, 45, 103, 0.12);
+}
+
+.about-why-image img {
+  display: block;
+  width: 100%;
+  min-height: 380px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .about-why-section {
+    padding: 70px 0;
+  }
+
+  .about-why-image img {
+    min-height: 300px;
+  }
+}

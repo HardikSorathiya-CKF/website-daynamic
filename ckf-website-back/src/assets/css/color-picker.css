@@ -1,0 +1,105 @@
+.ckf-color-picker-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ckf-color-picker-field__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9aa6b5;
+}
+
+.ckf-color-picker-field__swatch {
+  width: 100%;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #d5dbe5;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-image:
+    linear-gradient(45deg, #d0d5dd 25%, transparent 25%),
+    linear-gradient(-45deg, #d0d5dd 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #d0d5dd 75%),
+    linear-gradient(-45deg, transparent 75%, #d0d5dd 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0;
+}
+
+.ckf-color-picker-field__swatch span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ckf-color-picker {
+  position: fixed;
+  z-index: 30000;
+  width: 220px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(6, 45, 103, 0.22);
+}
+
+.ckf-color-picker input[type="color"] {
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #d5dbe5;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ckf-color-picker input[type="text"] {
+  width: 100%;
+  height: 34px;
+  margin-top: 8px;
+  padding: 0 10px;
+  border: 1px solid #d5dbe5;
+  border-radius: 8px;
+  color: #062d67;
+}
+
+.ckf-color-picker__opacity {
+  display: grid;
+  grid-template-columns: auto 1fr 40px;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.ckf-color-picker__opacity input[type="range"] {
+  width: 100%;
+  accent-color: #062d67;
+}
+
+.ckf-color-picker__opacity strong {
+  font-size: 12px;
+  text-align: right;
+  color: #062d67;
+}
+
+.ckf-color-picker__presets {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.ckf-color-picker__presets button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d5dbe5;
+  border-radius: 50%;
+  cursor: pointer;
+}

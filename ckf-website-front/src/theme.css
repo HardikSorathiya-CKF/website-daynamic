@@ -1,0 +1,78 @@
+@import './assets/fonts/nunito.css';
+
+:root {
+  --font-family-base: "Nunito", "Segoe UI", Arial, sans-serif;
+  --color-ckf-primary: #062d67;
+  --color-ckf-secondary: #f58020;
+  --color-ckf-text: #575757;
+  --color-ckf-bg: #fdfaf1;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes float-btn-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float::before,
+  .scroll-to-top.is-visible::before {
+    animation: none;
+  }
+}
+
+.parallax-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section:not(.hero-section):not(.page-breadcrumb):not(.no-parallax) {
+  backface-visibility: hidden;
+}
+
+.service-detail-page section,
+.services-page section,
+.about-page section,
+.contact-page section,
+.home-page section,
+.case-studies-page section,
+.case-study-detail-page section {
+  transform: none !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-text-light);
+  font-family: var(--font-family-base);
+}
+
+#root {
+  min-height: 100vh;
+}

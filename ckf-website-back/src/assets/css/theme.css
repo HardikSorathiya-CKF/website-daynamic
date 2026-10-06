@@ -1,0 +1,42 @@
+/* ============================================
+   THEME (global brand CSS)
+   Same naming as backend theme.css
+   ============================================ */
+@import "../fonts/nunito.css";
+
+:root {
+  /* Brand (same names as backend) */
+  --font-family-base: "Nunito", "Segoe UI", Arial, sans-serif;
+  --color-ckf-primary: #062d67;
+  --color-ckf-secondary: #f58020;
+  --color-ckf-text: #575757;
+
+  /* Extra helpers (built from brand colors) */
+  --color-ckf-primary-hover: #041f4a;
+  --color-ckf-primary-light: #e8eef6;
+  --color-ckf-primary-soft: #d4deec;
+  --color-ckf-secondary-hover: #db6c12;
+  --color-ckf-white: #ffffff;
+  --color-ckf-text-muted: #7a7a7a;
+
+  /* Background */
+  --color-ckf-bg-page: #f3f6fa;
+  --color-ckf-bg-card: #ffffff;
+  --color-ckf-bg-input: #f7f9fc;
+
+  /* Border */
+  --color-ckf-border: #d5dbe5;
+  --color-ckf-border-focus: var(--color-ckf-primary);
+  --color-ckf-border-error: #e11d48;
+
+  /* Status */
+  --color-ckf-error: #e11d48;
+  --color-ckf-error-bg: #fff1f3;
+  --color-ckf-success: #15803d;
+  --color-ckf-success-bg: #ecfdf3;
+
+  /* Size */
+  --radius: 12px;
+  --input-height: 48px;
+  --shadow-soft: 0 20px 50px rgba(6, 45, 103, 0.12);
+}

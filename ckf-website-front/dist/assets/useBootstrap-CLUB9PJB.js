@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/vendor-bootstrap-kDANmN_J.js","assets/rolldown-runtime-hePW80VL.js"])))=>i.map(i=>d[i]);
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,f as n,m as r}from"./vendor-react-DVHVb5Qh.js";var i=e(r(),1),a=n(),o=null;function s(){return o||=t(()=>import(`./vendor-bootstrap-kDANmN_J.js`).then(t=>e(t.t(),1)),__vite__mapDeps([0,1])),o}function c(){let e=(0,a.c)(1),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=[],e[0]=t):t=e[0],(0,i.useEffect)(l,t)}function l(){s()}export{c as t};

@@ -1,0 +1,62 @@
+.ckf-btn {
+  height: var(--input-height);
+  padding: 0 22px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-ckf-primary);
+  color: var(--color-ckf-white);
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(6, 45, 103, 0.28);
+}
+
+.ckf-btn:hover:not(:disabled) {
+  background: var(--color-ckf-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(6, 45, 103, 0.32);
+}
+
+.ckf-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.ckf-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.ckf-btn--full {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.ckf-btn--ghost {
+  background: #fff;
+  color: var(--color-ckf-primary);
+  border: 1.5px solid var(--color-ckf-border);
+  box-shadow: none;
+}
+
+.ckf-btn--ghost:hover:not(:disabled) {
+  background: var(--color-ckf-primary-light);
+  transform: none;
+  box-shadow: none;
+}
+
+.ckf-btn--danger {
+  background: var(--color-ckf-error);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.28);
+}
+
+.ckf-btn--danger:hover:not(:disabled) {
+  background: #be123c;
+  box-shadow: 0 10px 24px rgba(225, 29, 72, 0.32);
+}

@@ -1,0 +1,30 @@
+.ckf-confirm {
+  text-align: center;
+}
+
+.ckf-confirm__icon {
+  width: 56px;
+  height: 56px;
+  margin: 4px auto 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ckf-primary-light);
+  color: var(--color-ckf-primary);
+  font-size: 24px;
+}
+
+.ckf-confirm__icon--danger {
+  background: var(--color-ckf-error-bg);
+  color: var(--color-ckf-error);
+}
+
+.ckf-confirm .ckf-form__title {
+  font-size: 22px;
+  padding-right: 0;
+}
+
+.ckf-confirm .ckf-form__subtitle {
+  margin-bottom: 22px;
+}

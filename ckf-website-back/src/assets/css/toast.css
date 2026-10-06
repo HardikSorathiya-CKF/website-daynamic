@@ -1,0 +1,98 @@
+/* Attractive flash / toast messages */
+.ckf-toast-container {
+  padding: 16px;
+}
+
+.ckf-toast {
+  font-family: var(--font-family-base) !important;
+  border-radius: 14px !important;
+  min-height: 64px !important;
+  padding: 14px 16px !important;
+  box-shadow: 0 12px 32px rgba(6, 45, 103, 0.14) !important;
+  border: 1px solid transparent !important;
+  color: #1f2937 !important; /* force dark text */
+  background: #ffffff !important;
+}
+
+/* Message text must always be visible */
+.ckf-toast__body,
+.ckf-toast .Toastify__toast-body,
+.ckf-toast .Toastify__toast-body > div,
+.ckf-toast .Toastify__toast-icon + div {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #1f2937 !important; /* force dark text */
+}
+
+.ckf-toast .Toastify__close-button {
+  opacity: 0.65 !important;
+  color: #1f2937 !important;
+  align-self: center !important;
+}
+
+.ckf-toast .Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+/* Success flash */
+.ckf-toast--success {
+  background: linear-gradient(135deg, #f0fdf6 0%, #ffffff 70%) !important;
+  border-color: #bbf7d0 !important;
+  color: #14532d !important;
+}
+
+.ckf-toast--success .Toastify__toast-body,
+.ckf-toast--success .Toastify__toast-body > div {
+  color: #14532d !important;
+}
+
+.ckf-toast--success .Toastify__toast-icon svg {
+  fill: #16a34a !important;
+}
+
+.ckf-toast--success .Toastify__progress-bar {
+  background: linear-gradient(90deg, #22c55e, #15803d) !important;
+}
+
+/* Error flash */
+.ckf-toast--error {
+  background: linear-gradient(135deg, #fff1f3 0%, #ffffff 70%) !important;
+  border-color: #fecdd3 !important;
+  color: #9f1239 !important;
+}
+
+.ckf-toast--error .Toastify__toast-body,
+.ckf-toast--error .Toastify__toast-body > div {
+  color: #9f1239 !important;
+}
+
+.ckf-toast--error .Toastify__toast-icon svg {
+  fill: #e11d48 !important;
+}
+
+.ckf-toast--error .Toastify__progress-bar {
+  background: linear-gradient(90deg, #fb7185, #e11d48) !important;
+}
+
+/* Info flash */
+.ckf-toast--info {
+  background: linear-gradient(135deg, #e8eef6 0%, #ffffff 70%) !important;
+  border-color: #d4deec !important;
+  color: #062d67 !important;
+}
+
+.ckf-toast--info .Toastify__toast-body,
+.ckf-toast--info .Toastify__toast-body > div {
+  color: #062d67 !important;
+}
+
+.ckf-toast--info .Toastify__toast-icon svg {
+  fill: #062d67 !important;
+}
+
+.ckf-toast--info .Toastify__progress-bar {
+  background: linear-gradient(90deg, #f58020, #062d67) !important;
+}
